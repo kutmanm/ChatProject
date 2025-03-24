@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
+    <title>Registration</title>
     <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
-    <div class="login-container">
-        <h1>Log In</h1>
+    <div class="login-container">  <!-- Используем тот же класс, что и в login -->
+        <h1>Registration</h1>
+        
+        <div class="input-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Name">
+        </div>
         
         <div class="input-group">
             <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="Enter Email">
+            <input type="email" id="email" placeholder="Enter email">
         </div>
         
         <div class="input-group">
@@ -20,10 +25,12 @@
             <input type="password" id="password" placeholder="Password">
         </div>
         
-        <button>Log In</button>
+        <div class="divider"></div>  <!-- Линия-разделитель -->
+        
+        <button>Create Account</button>
         
         <div class="footer">
-            <a href="#">Back to Registration</a><br>
+            <a href="login.html">Log in</a><br>
             ver. 0.0.0 (demo)
         </div>
     </div>
